@@ -1,0 +1,10 @@
+int Solution::coverPoints(vector<int> &X, vector<int> &Y) {
+
+    int a,b,min=0;
+    a=X.size();
+    b=Y.size();
+    for(int i=1;i<a;i++){
+        min+=(abs(X[i]-X[i-1])<abs(Y[i]-Y[i-1])?abs(Y[i]-Y[i-1]):abs(X[i]-X[i-1]));
+    }
+    return min;
+}
