@@ -1,0 +1,13 @@
+vector<vector<int> > Solution::generate(int A) {
+    vector<vector<int>>a(A);
+    int i,j;
+    for(i=0;i<A;i++){
+        a[i].resize(i+1);
+        a[i][0]=a[i][i]=1;
+        
+    for(j=1;j<i;j++){
+        a[i][j]=a[i-1][j-1]+a[i-1][j];
+    }
+    }
+    return a;
+}
