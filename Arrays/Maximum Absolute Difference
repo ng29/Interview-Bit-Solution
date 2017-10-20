@@ -1,0 +1,23 @@
+int Solution::maxArr(vector<int> &A) {
+    int i,l;
+    int ma1=INT_MIN,ma2=INT_MIN,ma3=INT_MIN,ma4=INT_MIN,ans=INT_MIN;
+    int mi1=INT_MAX,mi2=INT_MAX,mi3=INT_MAX,mi4=INT_MAX;
+    l=A.size();
+    for(i=0;i<l;i++){
+        ma1=max(ma1,A[i]+i);
+        ma2=max(ma2,A[i]-i);
+        ma3=max(ma3,-A[i]+i);
+        ma4=max(ma4,-A[i]-i);
+        
+        mi1=min(mi1,A[i]+i);
+        mi2=min(mi2,A[i]-i);
+        mi3=min(mi3,-A[i]+i);
+        mi4=min(mi4,-A[i]-i);
+    }
+    ans=max(ans,ma1-mi1);
+    ans=max(ans,ma2-mi2);
+    ans=max(ans,ma3-mi3);
+    ans=max(ans,ma4-mi4);
+    
+    return ans;
+}
