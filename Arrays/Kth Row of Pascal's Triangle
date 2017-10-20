@@ -1,0 +1,11 @@
+vector<int> Solution::getRow(int A) {
+    vector<int>v(A+1,0);
+    int i,j;
+    v[0]=1;
+    for(i=1;i<A+1;i++){
+        for(j=i;j>=1;j--){
+            v[j]+=v[j-1];
+        }
+    }
+   return v;
+}
