@@ -1,7 +1,8 @@
 vector<int> Solution::plusOne(vector<int> &A) {
     A[A.size()-1]++;
     vector <int >S;
-    int i=A.size()-1,j=0;
+    int i=A.size()-1;
+    int j=0;
     while(i>0 && A[i]==10){
         A[i]=0;
         A[i-1]++;
