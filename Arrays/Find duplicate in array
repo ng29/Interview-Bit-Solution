@@ -1,0 +1,12 @@
+int Solution::repeatedNumber(const vector<int> &A) {
+    int i,l;
+    l=A.size();
+    vector<bool>a(l);
+    fill(a.begin(),a.end(),true);
+    for(i=0;i<l;i++){
+        if(a[A[i]])
+        a[A[i]]=false;
+        else
+        return A[i];
+    }
+}
