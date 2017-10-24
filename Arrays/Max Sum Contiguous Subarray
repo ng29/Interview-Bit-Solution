@@ -1,5 +1,6 @@
 int Solution::maxSubArray(const vector<int> &A) {
-    int i,far=-2147483648,end=0;
+    int i,far=-2147483648;
+    int end=0;
     int l=A.size();
     for(i=0;i<l;i++){
         end+=A[i];
