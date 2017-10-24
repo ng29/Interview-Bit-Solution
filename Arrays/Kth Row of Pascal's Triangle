@@ -1,6 +1,7 @@
 vector<int> Solution::getRow(int A) {
     vector<int>v(A+1,0);
-    int i,j;
+    int i;
+    int j;
     v[0]=1;
     for(i=1;i<A+1;i++){
         for(j=i;j>=1;j--){
