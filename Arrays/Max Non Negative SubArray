@@ -1,6 +1,7 @@
    vector<int> Solution::maxset(vector<int> &A) {
     int l=A.size();
-    int sm=-1,em=-1,s=0,e=0;
+    int sm=-1,em=-1;
+    int s=0,e=0;
     long long ms=0,cs=0;
     while(e<l){
         if(A[e]>=0){
