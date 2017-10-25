@@ -1,8 +1,8 @@
 int Solution::maxArr(vector<int> &A) {
-    int i,l;
+    int i;
     int ma1=INT_MIN,ma2=INT_MIN,ma3=INT_MIN,ma4=INT_MIN,ans=INT_MIN;
     int mi1=INT_MAX,mi2=INT_MAX,mi3=INT_MAX,mi4=INT_MAX;
-    l=A.size();
+    int l=A.size();
     for(i=0;i<l;i++){
         ma1=max(ma1,A[i]+i);
         ma2=max(ma2,A[i]-i);
