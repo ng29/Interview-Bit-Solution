@@ -1,9 +1,9 @@
 int Solution::hammingDistance(const vector<int> &A) {
 
-    int i,j;
+    int i,j,c;
     long long int ans=0;
     for(i=0;i<31;i++){
-        int c=0;
+         c=0;
         for(j=0;j<A.size();j++)
             if(A[j]&(1<<i))
             c++;
