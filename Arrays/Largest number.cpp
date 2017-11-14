@@ -4,8 +4,8 @@ int myComp(string x, string y){
 }
 
 string Solution::largestNumber(const vector<int> &A) {
-    int i;
     vector<string>B;
+    int i;
     string ans="";
     bool all=true;
     
@@ -15,6 +15,7 @@ string Solution::largestNumber(const vector<int> &A) {
     }
     if(all) return "0";
     sort(B.begin(),B.end(),myComp);
-    for(i=0;i<B.size();i++)     ans+=B[i];
+    for(i=0;i<B.size();i++)    
+        ans+=B[i];
     return ans;
 }
