@@ -12,8 +12,8 @@ string Solution::findDigitsInBinary(int A) {
     }
     
     string ans = ss.str();
-    
-    for(int i = 0; i < ans.size()/2; i++){
+    int i;
+    for(i = 0; i < ans.size()/2; i++){
         char temp = ans[i];
         ans[i] = ans[ans.size()-1-i];
         ans[ans.size()-1-i] = temp;
