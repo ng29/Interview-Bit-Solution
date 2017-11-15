@@ -1,6 +1,6 @@
 int Solution::hammingDistance(const vector<int> &A) {
 
-    int i,j,c;
+    long long int i,j,c;
     long long int ans=0;
     for(i=0;i<31;i++){
          c=0;
