@@ -11,8 +11,10 @@ bool Solution::hotel(vector<int> &arrive, vector<int> &depart, int K) {
             d++;
         }
         while((a<l) && (start==arrive[a])){
-            if(K>0) K--;
-            else    return false;
+            if(K>0)
+                K--;
+            else    
+                return false;
             a++;
         }
 }
